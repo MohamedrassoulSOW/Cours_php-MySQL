@@ -18,5 +18,3 @@
     </form>
 </body>
 </html>
-
-https://www.youtube.com/watch?v=nu2m9HaeVV4&t=25s
