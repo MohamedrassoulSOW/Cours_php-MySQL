@@ -40,8 +40,8 @@ require('actions/question/showAllQuestionAction.php');
                 <div class="card-body">
                 <?= $question['description']; ?>
                 </div>
-                <div class="card-footer">
-                    Publié par <?= $question['email_author']; ?>, le <?= $question['date_publication']; ?>
+                <div class="card-footer">Publié par  <a href="profile.php?id=<?= $question['id_author']; ?>"><?= $question['email_author']; ?> </a> 
+                le <?= $question['date_publication']; ?>
                 </div>
             </div>
             <br>

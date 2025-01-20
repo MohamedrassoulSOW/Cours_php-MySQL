@@ -27,7 +27,7 @@ require('actions/question/showAllAnswerOfQuestionAction.php');
                     <hr>
                     <p><?= $questions_contenu; ?></p>
                     <hr>
-                    <small><?= $questions_email_author.' '. $questions_date_publication; ?></small>
+                    <small><?='<a href="profile.php?id='.$questions_id_author.'">'.$questions_email_author.'</a> '. $questions_date_publication; ?></small>
 
                 </section>
                 <br>
@@ -50,7 +50,7 @@ require('actions/question/showAllAnswerOfQuestionAction.php');
 
                         <div class="card">
                             <div class="card-header">
-                            <h3><?= $answer['email_author']; ?></h3>
+                            <h3><a href="profile.php?id= <?=$answer['id_author'];?>"><?= $answer['email_author']; ?></a> </h3>
                             </div>
                             <div class="card-body">
                             <p><?= $answer['contenu']; ?></p>
